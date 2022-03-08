@@ -14,3 +14,4 @@ Using javascript, a searchable weather widget was created to display current wea
 Using the [OpenWeather API](http://openweathermap.org/api), users are able to search for a city and return the current weather, as well as a 5 day forecast. Previous searches are logged in local storage and available to view again on the sidebar.
 
 ## Visual
+![A screenshot of the site](./screenshot.png)
