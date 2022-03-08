@@ -1,0 +1,13 @@
+h1 {
+    color: white;
+}
+h2 {
+    text-align: center;
+}
+#forecast {
+    display: block;
+    justify-content: center;
+}
+.card {
+    display: inline-block;
+}
