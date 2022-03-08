@@ -1,6 +1,6 @@
 var apiKey = 'b220da5617847bf30789df166df8a1aa';
 var requestURL = 'https://api.openweathermap.org/data/2.5/onecall?lat=39.526329&lon=-80.341248&appid=b220da5617847bf30789df166df8a1aa&units=imperial';
-var geocodingURL = 'http://api.openweathermap.org/geo/1.0/direct';
+var geocodingURL = 'https://api.openweathermap.org/geo/1.0/direct';
 var searchBox;
 var oneCall = 'https://api.openweathermap.org/data/2.5/onecall';
 
@@ -65,7 +65,7 @@ function getWeather(lat, long, name, state, country) {
 
 // displays current weather on page
 function displayCurWeather(name, dt, icon, temp, wind_speed, humidity, uvi) {
-  $("#location").html('<h2>' + name + ' (' + dt + ')' + '<img src="http://openweathermap.org/img/wn/' + icon + '.png"></h2>');
+  $("#location").html('<h2>' + name + ' (' + dt + ')' + '<img src="https://openweathermap.org/img/wn/' + icon + '.png"></h2>');
   $("#currentTemp").html(formatTemp(temp));
   $("#currentHumidity").html(formatHum(humidity));
   $("#currentWind").html(formatWind(wind_speed));
@@ -94,7 +94,7 @@ function formatWind(windPass) { //lol
 }
 
 function displayDayOne(dt, icon, temp, wind_speed, humidity) { //card for the 5 day weather forecast
-  $("#fiveDay").append('<div class="card text-center" style="width: 10rem"><div class="card-body"><h5 class="card-title">' + dt + '<img src="http://openweathermap.org/img/wn/' + icon + '.png"></h5><ul class="list-group list-group-flush"><li class="list-group-item">' + formatTemp(temp) + '</li><li class="list-group-item">' + formatWind(wind_speed) + '</li><li class="list-group-item">' + formatHum(humidity) + '</li></ul></div></div>');
+  $("#fiveDay").append('<div class="card text-center" style="width: 10rem"><div class="card-body"><h5 class="card-title">' + dt + '<img src="https://openweathermap.org/img/wn/' + icon + '.png"></h5><ul class="list-group list-group-flush"><li class="list-group-item">' + formatTemp(temp) + '</li><li class="list-group-item">' + formatWind(wind_speed) + '</li><li class="list-group-item">' + formatHum(humidity) + '</li></ul></div></div>');
 }
 
 $(document).ready(function () { //baseline info for NYC when you load the index page
